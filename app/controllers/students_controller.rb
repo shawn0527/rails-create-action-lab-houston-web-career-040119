@@ -25,7 +25,6 @@ class StudentsController < ApplicationController
 
 
   def create
-    byebug
     student = Student.create(params[:student])
     redirect_to student_path(student)
   end
