@@ -11,9 +11,9 @@ class StudentsController < ApplicationController
   def new
   end
 
-  def student_params
-    params.require(:student).permit(:first_name, :last_name)
-  end
+  # def student_params
+  #   params.require(:student).permit(:first_name, :last_name)
+  # end
 
   def create
     student_params = params.require(:student).permit(:first_name, :last_name)
