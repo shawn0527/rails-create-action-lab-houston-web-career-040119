@@ -25,6 +25,7 @@ class StudentsController < ApplicationController
 
 
   def create
+    byebug
     student = Student.create(
 
         first_name: params[:student][:first_name],
